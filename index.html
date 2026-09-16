@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatsalay Fashion - Handwork & Heritage of India</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Use Code <strong>WelcomeVatsalay</strong> at checkout to get flat 10% off on your first order *T&C</p>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Vatsalay Fashion Logo" class="brand-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="fallback-logo">VATSALAY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="pages/collections.html">Clothing <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pages/collections.html">Petites <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pages/collections.html">Featured <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pages/collections.html">Accessories <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pages/collections.html">Sale <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pages/about.html">Our Story <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="currency-selector">
+                    <span>US (USD $)</span> <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <a href="pages/contact.html" class="icon-btn" title="Account"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="icon-btn" title="Search"><i class="fa-magnifying-glass"></i></a>
+                <a href="pages/wishlist.html" class="icon-btn cart-btn" title="Wishlist & Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+
+        <!-- 0. Hero Video Slider Section -->
+        <section class="hero-video-slider">
+            <div class="video-slider-container">
+                <!-- Video Slide 1 -->
+                <div class="video-slide active">
+                    <video muted playsinline preload="auto">
+                        <source src="assets/images/slider/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay-content">
+                        <h1>Handcrafted Elegance</h1>
+                        <p>Discover the timeless tradition of Indian handloom weaving.</p>
+                    </div>
+                </div>
+                <!-- Video Slide 2 -->
+                <div class="video-slide">
+                    <video muted playsinline preload="auto">
+                        <source src="assets/images/slider/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay-content">
+                        <h1>Artisanal Perfection</h1>
+                        <p>Every thread tells a story of heritage and skill.</p>
+                    </div>
+                </div>
+                <!-- Video Slide 3 -->
+                <div class="video-slide">
+                    <video muted playsinline preload="auto">
+                        <source src="assets/images/slider/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay-content">
+                        <h1>Legacy of Craft</h1>
+                        <p>Bringing authentic handwork straight from weavers to your wardrobe.</p>
+                    </div>
+                </div>
+                <!-- Video Slide 4 -->
+                <div class="video-slide">
+                    <video muted playsinline preload="auto">
+                        <source src="assets/images/slider/video4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay-content">
+                        <h1>Celebrate With Tradition</h1>
+                        <p>Exquisite festive designs crafted with love.</p>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="hero-slider-btn hero-prev" id="heroPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="hero-slider-btn hero-next" id="heroNext"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+
+        <!-- 1. Collections Grid Section (Reference 1) -->
+        <section class="collections-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Collections</h2>
+                <div class="collections-grid">
+                    <div class="collection-card">
+                        <div class="image-box">
+                            <img src="assets/images/products/kurta/sample-kurta.jpeg" alt="Festive Kurtas" onerror="this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <h3>FESTIVE KURTAS</h3>
+                    </div>
+                    <div class="collection-card">
+                        <div class="image-box">
+                            <img src="assets/images/products/saree/sample-saree.jpeg" alt="Festive Sarees" onerror="this.src='https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <h3>FESTIVE SAREES</h3>
+                    </div>
+                    <div class="collection-card">
+                        <div class="image-box">
+                            <img src="assets/images/products/blouse/sample-blouse.jpeg" alt="Festive Dresses" onerror="this.src='https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <h3>FESTIVE DRESSES</h3>
+                    </div>
+                    <div class="collection-card">
+                        <div class="image-box">
+                            <img src="assets/images/products/jewellery/sample-jewellery.jpeg" alt="Festive Jewellery" onerror="this.src='https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <h3>FESTIVE JEWELLERY</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Bestsellers Section with Slider Controls (Reference 2) -->
+        <section class="bestsellers-section section-padding bg-cream">
+            <div class="container bestsellers-flex">
+                <div class="bestsellers-info">
+                    <h2 class="section-title-left">Bestsellers</h2>
+                    <p>Our top rated styles loved by customers. Beautifully crafted by hand, these bestsellers are ready to wear on repeat.</p>
+                    <a href="pages/collections.html" class="explore-link">EXPLORE NOW <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="bestsellers-slider-wrapper">
+                    <button class="slider-arrow prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="bestsellers-track" id="bestsellersTrack">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=500&q=80" alt="Bestseller item">
+                        </div>
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80" alt="Bestseller item">
+                        </div>
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Bestseller item">
+                        </div>
+                    </div>
+                    <button class="slider-arrow next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Heritage Banner Section (Reference 3 & 6) -->
+        <section class="heritage-banner">
+            <div class="container heritage-flex">
+                <div class="heritage-text">
+                    <h2>The Gateway to India’s Timeless Heritage</h2>
+                    <p>We aim to provide a platform to Indian Handloom Weavers and Handicraft Artisans to sell their traditional handicraft products online, paving the way for their financial and social empowerment. This will also help in promoting their skills while eliminating the intermediaries.</p>
+                    <p>We hope to raise the dignity of the Indian artisans and kindle an interest for an unsurpassed legacy of craft that spans millennia and spreads across the length and breadth of India.</p>
+                    <a href="pages/about.html" class="btn-primary">Know More</a>
+                </div>
+                <div class="heritage-image">
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=700&q=80" alt="Indian Artisan Weaving">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Celebrate The New Beginning / Home Decor (Reference 4) -->
+        <section class="celebrate-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Celebrate The New Beginning</h2>
+                <div class="celebrate-grid">
+                    <div class="grid-item large-card">
+                        <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=700&q=80" alt="Cushion Covers">
+                        <h3>Cushion Covers</h3>
+                    </div>
+                    <div class="grid-item small-card">
+                        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=500&q=80" alt="Home Decor">
+                        <h3>Home Decor</h3>
+                    </div>
+                    <div class="grid-item small-card">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80" alt="Bedsheets">
+                        <h3>Bedsheets</h3>
+                    </div>
+                    <div class="grid-item wide-card">
+                        <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80" alt="Floor Coverings">
+                        <h3>Floor Coverings</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Authenticity Banner (Reference 5) -->
+        <section class="authenticity-banner">
+            <div class="container authenticity-flex">
+                <div class="auth-left">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Authentic Craft">
+                </div>
+                <div class="auth-right">
+                    <h2>A True Reflection of Authenticity & Tradition</h2>
+                    <div class="auth-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-medal"></i>
+                            <span>Verified artisans and weavers</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-box-open"></i>
+                            <span>Exquisite products</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-gem"></i>
+                            <span>Intricate designs</span>
+                        </div>
+                    </div>
+                    <a href="pages/collections.html" class="btn-outline">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Featured Stores / Craft Spotlight (Reference 7) -->
+        <section class="stores-section section-padding">
+            <div class="container">
+                <div class="stores-grid">
+                    <div class="store-card">
+                        <div class="store-badge">Store of the Month</div>
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=500&q=80" alt="Craft Edge Store">
+                        <div class="store-info">
+                            <h3>Craft Edge</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> Madhubani, Bihar</p>
+                            <p class="store-desc">Where Madhubani heritage meets contemporary handmade artistry.</p>
+                            <a href="pages/collections.html">Explore Store <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <div class="store-badge">Store of the Month</div>
+                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80" alt="Handloom Plus Store">
+                        <div class="store-info">
+                            <h3>Handloom Plus</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> Bhagalpur, Bihar</p>
+                            <p class="store-desc">Bhagalpur's timeless silk heritage, woven into contemporary elegance.</p>
+                            <a href="pages/collections.html">Explore Store <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="store-card">
+                        <div class="store-badge">Store of the Month</div>
+                        <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=500&q=80" alt="Vidyashish Store">
+                        <div class="store-info">
+                            <h3>Vidyashish Hathkargha</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> Anwa, Rajasthan</p>
+                            <p class="store-desc">Preserving India's handloom legacy, empowering rural artisans.</p>
+                            <a href="pages/collections.html">Explore Store <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Fantastic Finds Section (Reference 8) -->
+        <section class="fantastic-finds section-padding bg-cream">
+            <div class="container">
+                <h2 class="section-title">Fantastic Finds</h2>
+                <div class="finds-slider-wrapper">
+                    <button class="slider-arrow finds-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="finds-track" id="findsTrack">
+                        <div class="find-card">
+                            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80" alt="Toys and Games">
+                            <h4>Toys and Games</h4>
+                        </div>
+                        <div class="find-card">
+                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80" alt="Women Accessories">
+                            <h4>Women Accessories</h4>
+                        </div>
+                        <div class="find-card">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80" alt="Women Bags">
+                            <h4>Women Bags</h4>
+                        </div>
+                        <div class="find-card">
+                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=400&q=80" alt="Ethnic Footwears">
+                            <h4>Ethnic Footwears</h4>
+                        </div>
+                    </div>
+                    <button class="slider-arrow finds-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (Reference 9) -->
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">VATSALAY</h2>
+                <p>Handwork & Timeless Indian Heritage</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><strong>VATSALAY FASHION PRIVATE LTD</strong></p>
+                <p>Surat, Gujarat, India</p>
+                <p>info@vatsalayfashion.com</p>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="pages/faq.html">FAQs</a></li>
+                    <li><a href="pages/about.html">Size Guide</a></li>
+                    <li><a href="pages/collections.html">Stockists</a></li>
+                    <li><a href="pages/contact.html">Wholesale Enquiry</a></li>
+                    <li><a href="pages/about.html">Textiles</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">SUBMIT</button>
+                </form>
+                <div class="footer-policies">
+                    <a href="pages/terms.html">Privacy Policy</a>
+                    <a href="pages/terms.html">Return Policy</a>
+                    <a href="pages/terms.html">T & C</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

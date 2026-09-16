@@ -1,0 +1,35 @@
+@media (max-width: 1024px) {
+    .collections-grid, .celebrate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .find-card {
+        min-width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Can be hooked with a mobile hamburger menu if needed */
+    }
+    .bestsellers-flex, .heritage-flex, .authenticity-flex {
+        flex-direction: column;
+    }
+    .collections-grid, .stores-grid {
+        grid-template-columns: 1fr;
+    }
+    .collection-card .image-box {
+        height: 350px;
+    }
+    .footer-flex {
+        grid-template-columns: 1fr;
+    }
+    .find-card {
+        min-width: 100%;
+    }
+}
