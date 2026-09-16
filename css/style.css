@@ -44,21 +44,82 @@ ul {
     background-color: var(--primary-bg);
 }
 
-/* Announcement Bar */
+/* =========================================
+   ANNOUNCEMENT BAR
+   ========================================= */
+
 .announcement-bar {
-    background-color: #D93838;
-    color: #fff;
+    width: 100%;
+    background: #2C221E;
+    color: #ffffff;
+
     text-align: center;
-    padding: 10px 15px;
-    font-size: 14px;
+
+    padding: 11px 20px;
+
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 0.4px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+.announcement-bar p {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    line-height: 1.4;
+}
+
+.announcement-bar span {
+    color: #C5A059;
+    font-size: 11px;
+}
+
+
+/* Subtle hover interaction */
+
+.announcement-bar p {
+    transition: letter-spacing 0.3s ease;
+}
+
+.announcement-bar:hover p {
+    letter-spacing: 0.7px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .announcement-bar {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    .announcement-bar p {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .announcement-bar span {
+        font-size: 9px;
+    }
+}
+
 
 /* Header Navbar */
 .site-header {
-    border-bottom: 1px solid var(--border-color);
+    background: #F3EDE5;
+    border-bottom: 1px solid #D8CBBE;
     position: sticky;
     top: 0;
-    background: #fff;
     z-index: 1000;
 }
 
@@ -92,7 +153,7 @@ ul {
     font-size: 15px;
     font-weight: 500;
     color: #4A3E38;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
@@ -100,7 +161,7 @@ ul {
 }
 
 .main-nav i {
-    font-size: 11px;
+    font-size: 10px;
     margin-left: 4px;
 }
 
@@ -114,13 +175,14 @@ ul {
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
+    color: #4A3E38;
 }
 
 .icon-btn {
     font-size: 18px;
     color: #2C221E;
     position: relative;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .icon-btn:hover {
@@ -518,8 +580,8 @@ ul {
 
 /* Footer Section */
 .site-footer {
-    background-color: var(--primary-bg);
-    border-top: 1px solid var(--border-color);
+    background-color: #EFE7DD;
+    border-top: 1px solid #D8CBBE;
     padding: 70px 0 20px;
 }
 
@@ -558,11 +620,12 @@ ul {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: background 0.3s;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
     background: var(--accent-red);
+    transform: translateY(-3px);
 }
 
 .footer-col h4 {
@@ -581,46 +644,48 @@ ul {
     color: var(--accent-red);
 }
 
-.newsletter-col form {
+/* =========================================
+   LET'S CONNECT
+   ========================================= */
+
+.connect-col p {
+    max-width: 300px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.footer-action {
     display: flex;
-    margin-bottom: 15px;
-}
+    align-items: center;
+    gap: 10px;
 
-.newsletter-col input {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid var(--border-color);
-    background: #fff;
-    font-family: var(--font-body);
-}
+    width: fit-content;
 
-.newsletter-col button {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 0 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.footer-policies {
-    display: flex;
-    gap: 15px;
-    font-size: 12px;
-}
-
-.footer-policies a {
+    font-size: 13px;
     color: #554A44;
-    text-decoration: underline;
+
+    margin-bottom: 12px;
+
+    transition: color 0.3s ease,
+                transform 0.3s ease;
 }
 
-.footer-bottom {
-    text-align: right;
-    border-top: 1px solid var(--border-color);
-    padding-top: 20px;
+.footer-action i {
+    width: 18px;
+    text-align: center;
+    font-size: 14px;
 }
 
-#scrollTopBtn {
+.footer-action:hover {
+    color: var(--accent-red);
+    transform: translateX(4px);
+}
+
+.footer-action:last-child {
+    margin-bottom: 0;
+}
+
+/* #scrollTopBtn {
     background: #000;
     color: #fff;
     border: none;
@@ -628,6 +693,36 @@ ul {
     height: 40px;
     cursor: pointer;
     border-radius: 2px;
+} */
+
+#scrollTopBtn {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 42px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background: var(--accent-red);
+    transform: translateY(-3px);
+}
+
+/* Position the button on the right side */
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10px;
 }
 
 /* Hero Video Slider Styles */
@@ -741,23 +836,61 @@ ul {
 .logo-area a {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between the round logo and the text */
+    gap: 10px;
     text-decoration: none;
 }
 
 /* Control the size of your round badge logo */
 .brand-logo-img {
-    width: 45px;     /* Adjust width as needed (e.g., 40px to 55px) */
-    height: 45px;    /* Keeps it proportional if your image is a square crop */
+    width: 35px;
+    height: 45px;
     object-fit: cover;
-    border-radius: 50%; /* Ensures it renders as a clean circle */
+    border-radius: 50%;
 }
 
 /* Styling for the text name next to the logo */
 .fallback-logo {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 700;
-    color: #111; /* Change to your preferred brand color */
-    letter-spacing: 0.5px;
+    color: #2C221E;
+    letter-spacing: 1px;
+}
+
+.features-section {
+    padding: 40px 20px;
+    background-color: #fff; /* Change as per your background */
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.feature-item img {
+    width: 100px; /* Adjust size based on your icon dimensions */
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
 }

@@ -10,7 +10,7 @@ Jeans
 Custom clothing
 Other
 
-A portfolio and product showcase website where customers can explore handmade clothing and contact the owner for customization and orders.\
+A portfolio and product showcase website where customers can explore handmade clothing and contact the owner for customization and orders.
 
 Technology : HTML, CSS, JavaScript
 
