@@ -33,3 +33,191 @@
         min-width: 100%;
     }
 }
+
+
+/* =========================================
+   MOBILE HEADER / NAVIGATION
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        background: #F3EDE5;
+    }
+
+    .header-container {
+        position: relative;
+        min-height: 82px;
+        padding: 0 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* =====================================
+       MOBILE MENU BUTTON
+       ===================================== */
+
+    .mobile-menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        border: none;
+        background: transparent;
+
+        font-size: 26px;
+        color: #2C221E;
+
+        cursor: pointer;
+
+        z-index: 1100;
+    }
+
+
+    /* =====================================
+       LOGO
+       ===================================== */
+
+    .logo-area {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brand-logo-img {
+        max-width: 150px;
+        height: auto;
+    }
+
+
+    /* =====================================
+       SEARCH
+       ===================================== */
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-btn {
+        width: 44px;
+        height: 44px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #D8CEC2;
+        border-radius: 50%;
+
+        color: #2C221E;
+        text-decoration: none;
+    }
+
+
+    /* =====================================
+       MOBILE NAVIGATION
+       ===================================== */
+
+    .main-nav {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #F3EDE5;
+
+        border-top: 1px solid #E6DCD0;
+        border-bottom: 1px solid #E6DCD0;
+
+        z-index: 1050;
+    }
+
+
+    /* THIS IS THE IMPORTANT PART */
+
+    .main-nav.active {
+        display: block;
+    }
+
+
+    /* Navigation list */
+
+    .main-nav ul {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 10px 0;
+
+        list-style: none;
+    }
+
+
+    /* Navigation items */
+
+    .main-nav ul li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Navigation links */
+
+    .main-nav ul li a {
+        display: block;
+
+        width: 100%;
+
+        padding: 16px 25px;
+
+        color: #2C221E;
+
+        text-decoration: none;
+
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+
+        border-bottom: 1px solid #E6DCD0;
+
+        transition: all 0.25s ease;
+    }
+
+
+    .main-nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+
+    .main-nav ul li a:hover {
+        background: #EDE4DA;
+        color: #8B2626;
+        padding-left: 30px;
+    }
+
+}
