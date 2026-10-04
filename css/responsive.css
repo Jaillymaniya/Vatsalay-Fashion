@@ -221,3 +221,314 @@
     }
 
 }
+
+/* =========================================================
+   VATSALAY — ART OF HANDWORK RESPONSIVE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   TABLET / SMALL LAPTOP
+   --------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+    .craft-story-container {
+        width: min(100% - 50px, 1380px);
+    }
+
+    .craft-story-heading {
+        gap: 45px;
+    }
+
+    .craft-story-layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .craft-story-main-visual {
+        min-height: 620px;
+    }
+
+    .craft-story-side {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .craft-story-detail-card {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-story-detail-image {
+        min-height: 300px;
+    }
+
+    .craft-story-detail-content {
+        min-height: 280px;
+    }
+
+    .craft-story-message-card {
+        min-height: 580px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .craft-story-section {
+        padding: 80px 0;
+    }
+
+    .craft-story-container {
+        width: calc(100% - 36px);
+    }
+
+    .craft-story-heading {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 45px;
+    }
+
+    .craft-story-heading h2 {
+        font-size: clamp(42px, 9vw, 62px);
+        letter-spacing: -1.5px;
+    }
+
+    .craft-story-heading-right {
+        max-width: 600px;
+    }
+
+    .craft-story-heading-right p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .craft-story-main-visual {
+        min-height: 560px;
+    }
+
+    .craft-story-side {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .craft-story-detail-card {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .craft-story-detail-image {
+        min-height: 330px;
+    }
+
+    .craft-story-detail-content {
+        min-height: auto;
+        padding: 32px 28px;
+    }
+
+    .craft-story-message-card {
+        min-height: 470px;
+        padding: 30px;
+    }
+
+    .craft-story-message-content h3 {
+        font-size: 34px;
+    }
+
+    .craft-story-bottom {
+        margin-top: 40px;
+        gap: 15px;
+    }
+
+    .craft-story-bottom p {
+        gap: 8px;
+        letter-spacing: 1.5px;
+        font-size: 8px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .craft-story-section {
+        padding: 65px 0;
+    }
+
+    .craft-story-container {
+        width: calc(100% - 28px);
+    }
+
+    .craft-story-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2px;
+        gap: 9px;
+    }
+
+    .craft-story-eyebrow-line {
+        width: 28px;
+    }
+
+    .craft-story-heading {
+        margin-bottom: 35px;
+    }
+
+    .craft-story-heading h2 {
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .craft-story-heading-right p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .craft-story-layout {
+        gap: 18px;
+    }
+
+    .craft-story-main-visual {
+        min-height: 470px;
+    }
+
+    .craft-story-main-caption {
+        left: 22px;
+        right: 22px;
+        bottom: 24px;
+        gap: 13px;
+    }
+
+    .craft-story-main-caption > span {
+        font-size: 28px;
+    }
+
+    .craft-story-main-caption strong {
+        font-size: 9px;
+        letter-spacing: 1.8px;
+    }
+
+    .craft-story-main-caption small {
+        font-size: 10px;
+    }
+
+
+    /* Detail Card */
+
+    .craft-story-detail-card {
+        grid-template-columns: 1fr;
+    }
+
+    .craft-story-detail-image {
+        min-height: 290px;
+    }
+
+    .craft-story-detail-content {
+        min-height: 250px;
+        padding: 30px 25px;
+    }
+
+    .craft-story-detail-content h3 {
+        font-size: 25px;
+    }
+
+    .craft-story-detail-content p {
+        font-size: 12px;
+    }
+
+
+    /* Message Card */
+
+    .craft-story-message-card {
+        min-height: 450px;
+        padding: 27px 25px 30px;
+    }
+
+    .craft-story-message-content h3 {
+        font-size: 32px;
+    }
+
+    .craft-story-message-content p {
+        font-size: 12px;
+    }
+
+
+    /* Bottom */
+
+    .craft-story-bottom {
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .craft-story-bottom-line {
+        min-width: 20px;
+    }
+
+    .craft-story-bottom p {
+        gap: 6px;
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .craft-story-bottom p span {
+        font-size: 7px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 400px) {
+
+    .craft-story-heading h2 {
+        font-size: 37px;
+    }
+
+    .craft-story-main-visual {
+        min-height: 420px;
+    }
+
+    .craft-story-message-card {
+        min-height: 470px;
+    }
+
+    .craft-story-message-content h3 {
+        font-size: 29px;
+    }
+
+    .craft-story-bottom p {
+        font-size: 6px;
+        letter-spacing: 0.7px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .craft-story-main-visual,
+    .craft-story-detail-card,
+    .craft-story-message-card {
+        animation: none;
+    }
+
+    .craft-story-main-visual img,
+    .craft-story-detail-image img {
+        transition: none;
+    }
+
+}
