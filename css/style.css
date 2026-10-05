@@ -52,33 +52,25 @@ ul {
 /* =========================================
    ANNOUNCEMENT BAR
    ========================================= */
-
 .announcement-bar {
     width: 100%;
     background: #2C221E;
     color: #ffffff;
-
     text-align: center;
-
     padding: 11px 20px;
-
     font-family: var(--font-body);
     font-size: 13px;
     font-weight: 500;
-
     letter-spacing: 0.4px;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .announcement-bar p {
     margin: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     line-height: 1.4;
 }
 
@@ -89,7 +81,6 @@ ul {
 
 
 /* Subtle hover interaction */
-
 .announcement-bar p {
     transition: letter-spacing 0.3s ease;
 }
@@ -100,7 +91,6 @@ ul {
 
 
 /* Mobile */
-
 @media (max-width: 600px) {
 
     .announcement-bar {
@@ -121,7 +111,6 @@ ul {
 /* =========================================
    STICKY HEADER
    ========================================= */
-
 #site-header {
     position: sticky;
     top: 0;
@@ -264,7 +253,6 @@ ul {
 /* =========================================
    MOBILE NAVIGATION
    ========================================= */
-
 @media (max-width: 900px) {
 
     .header-container {
@@ -297,20 +285,16 @@ ul {
 
         /* Ensure opaque background so content underneath does not bleed through */
         background-color: #FAF6F0; 
-
         border-top: 1px solid var(--border-color);
         border-bottom: 1px solid var(--border-color);
-
         max-height: 0;
         overflow: hidden;
-
         opacity: 0;
         visibility: hidden;
 
         /* CRITICAL: Keep dropdown layer above hero slider & videos */
         z-index: 10000;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-
         transition:
             max-height 0.35s ease,
             opacity 0.25s ease,
@@ -329,10 +313,8 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-
         width: 100%;
         padding: 18px 25px 22px;
-
         gap: 0;
     }
 
@@ -350,13 +332,10 @@ ul {
     .main-nav a {
         display: block;
         width: 100%;
-
         padding: 14px 5px;
-
         font-size: 13px;
         font-weight: 600;
         letter-spacing: 1.2px;
-
         color: var(--text-color);
     }
 
@@ -407,12 +386,9 @@ ul {
     border-radius: 50%;
 }
 
-
-
 /* =========================================
    EDITORIAL FASHION HERO BANNER
 ========================================= */
-
 .editorial-hero-banner {
     position: relative;
     width: 100%;
@@ -430,12 +406,10 @@ ul {
     position: absolute;
     inset: 0;
     z-index: -2;
-
     background-image: url("../assets/images/hero-fashion.png");
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
-
     transform: scale(1.01);
 }
 
@@ -444,7 +418,6 @@ ul {
     position: absolute;
     inset: 0;
     z-index: -1;
-
     background: linear-gradient(
         90deg,
         rgba(38, 22, 10, 0.76) 0%,
@@ -461,18 +434,15 @@ ul {
     margin: 0 auto;
     padding: 75px 6% 65px;
     color: #fffaf4;
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     text-align: right;
 }
 
 .editorial-hero-eyebrow {
     display: block;
     margin-bottom: 27px;
-
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -486,7 +456,6 @@ ul {
 .editorial-hero-content h1 {
     max-width: 680px;
     margin: 0 0 25px;
-
     font-family: 'Playfair Display', serif;
     font-size: clamp(58px, 5.3vw, 88px);
     font-weight: 400;
@@ -504,7 +473,6 @@ ul {
 .editorial-hero-content > p {
     max-width: 390px;
     margin: 0 0 40px;
-
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -523,11 +491,9 @@ ul {
 .editorial-btn {
     min-height: 62px;
     padding: 0 32px;
-
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -670,68 +636,6 @@ ul {
     object-fit: cover;
 }
 
-/* 6. Stores Section */
-.stores-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.store-card {
-    background: var(--primary-bg);
-    border: 1px solid var(--border-color);
-    position: relative;
-    overflow: hidden;
-}
-
-.store-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #C5A059;
-    color: #fff;
-    font-size: 11px;
-    padding: 4px 10px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.store-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.store-info {
-    padding: 25px;
-}
-
-.store-info h3 {
-    font-family: var(--font-heading);
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
-.store-info p {
-    font-size: 13px;
-    color: #665C58;
-    margin-bottom: 12px;
-}
-
-.store-desc {
-    font-size: 14px;
-    color: #4A3E38;
-    margin-bottom: 15px;
-    min-height: 40px;
-}
-
-.store-info a {
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: var(--accent-red);
-}
-
 /* 7. Fantastic Finds */
 .finds-slider-wrapper {
     position: relative;
@@ -835,7 +739,6 @@ ul {
 /* =========================================
    LET'S CONNECT
    ========================================= */
-
 .connect-col p {
     max-width: 300px;
     line-height: 1.7;
@@ -846,14 +749,10 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
-
     width: fit-content;
-
     font-size: 13px;
     color: #554A44;
-
     margin-bottom: 12px;
-
     transition: color 0.3s ease,
                 transform 0.3s ease;
 }
@@ -873,16 +772,6 @@ ul {
     margin-bottom: 0;
 }
 
-/* #scrollTopBtn {
-    background: #000;
-    color: #fff;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 2px;
-} */
-
 #scrollTopBtn {
     background: #000;
     color: #fff;
@@ -891,11 +780,9 @@ ul {
     height: 42px;
     cursor: pointer;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: all 0.3s ease;
 }
 
@@ -919,7 +806,6 @@ ul {
     position: relative;
     background: #ffff;
     padding : 20px;
-
 }
 
 .video-slider-container {
@@ -1097,14 +983,11 @@ ul {
 /* =========================================================
    VATSALAY FASHION — REFINED EDITORIAL COLLECTION
    ========================================================= */
-
 .fashion-collections {
     --collection-gap: 14px;
-
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: var(--collection-gap);
-
     padding: 65px 30px 75px;
     background: #fff;
     overflow: hidden;
@@ -1123,7 +1006,6 @@ ul {
 .collection-eyebrow {
     display: inline-block;
     margin-bottom: 12px;
-
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -1132,7 +1014,6 @@ ul {
 
 .fashion-collections-header h2 {
     margin: 0 0 12px;
-
     font-family: var(--font-heading);
     font-size: clamp(30px, 3.3vw, 46px);
     font-weight: 500;
@@ -1148,7 +1029,6 @@ ul {
 .fashion-collections-header p {
     max-width: 580px;
     margin: 0 auto;
-
     color: #766862;
     font-size: 13px;
     line-height: 1.8;
@@ -1168,19 +1048,14 @@ ul {
     display: block;
     width: 100%;
     height: clamp(250px, 29vw, 390px);
-
     min-width: 0;
     overflow: hidden;
     isolation: isolate;
-
     background: #241916;
     border-radius: 3px;
-
     box-shadow: 0 5px 18px rgba(44, 34, 30, 0.06);
-
     opacity: 0;
     animation: collectionFadeUp 0.7s ease forwards;
-
     transition:
         box-shadow 0.4s ease,
         transform 0.4s ease;
@@ -1221,7 +1096,6 @@ ul {
     height: 100%;
     object-fit: cover;
     object-position: center;
-
     transform: scale(1);
     transition:
         transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1),
@@ -1234,7 +1108,6 @@ ul {
     position: absolute;
     inset: 0;
     z-index: -1;
-
     background: linear-gradient(
         180deg,
         rgba(20, 12, 10, 0.04) 15%,
@@ -1251,11 +1124,9 @@ ul {
     position: absolute;
     inset: 0;
     z-index: 1;
-
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-
     padding: clamp(12px, 1.5vw, 22px);
     color: #fff;
 }
@@ -1263,7 +1134,6 @@ ul {
 .editorial-text {
     width: 100%;
     max-width: 100%;
-
     transform: translateY(0);
     transition: transform 0.4s ease;
 }
@@ -1272,12 +1142,10 @@ ul {
 .editorial-type {
     display: block;
     margin-bottom: 7px;
-
     font-size: 8px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 1.5px;
-
     color: #E6C98C;
     overflow-wrap: anywhere;
 }
@@ -1286,28 +1154,23 @@ ul {
 .editorial-text h3,
 .editorial-small-content h3 {
     margin: 0 0 9px;
-
     font-family: var(--font-heading);
     font-size: clamp(23px, 2.2vw, 31px);
     font-weight: 500;
     line-height: 1.15;
-
     color: #fff;
 }
 
 /* Description is revealed on hover */
 .editorial-text p {
     margin: 0 0 12px;
-
     font-size: 11px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.88);
-
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transform: translateY(8px);
-
     transition:
         opacity 0.35s ease,
         max-height 0.4s ease,
@@ -1319,17 +1182,14 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-
     padding-bottom: 4px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.65);
-
     color: #fff;
     font-size: 9px;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.7px;
     text-transform: uppercase;
-
     opacity: 0;
     transform: translateY(8px);
 
@@ -1348,14 +1208,11 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 31px;
     height: 31px;
     margin-top: 12px;
-
     border: 1px solid rgba(255, 255, 255, 0.75);
     border-radius: 50%;
-
     font-size: 11px;
     color: #fff;
 
@@ -1369,7 +1226,6 @@ ul {
 /* =====================================================
    HOVER EFFECTS
    ===================================================== */
-
 .editorial-card:hover,
 .editorial-small:hover {
     transform: translateY(-5px);
@@ -1443,24 +1299,19 @@ ul {
 /* =====================================================
    CUSTOM DESIGN CTA
    ===================================================== */
-
 .collection-bottom-cta {
     grid-column: 1 / -1;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-
     max-width: 1420px;
     width: 100%;
     margin: 22px auto 0;
     padding: 23px 28px;
-
     background: #FAF6F0;
     border: 1px solid var(--border-color);
     border-radius: 3px;
-
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease;
@@ -1474,7 +1325,6 @@ ul {
 .collection-bottom-cta span {
     display: block;
     margin-bottom: 5px;
-
     color: var(--accent-red);
     font-size: 9px;
     font-weight: 700;
@@ -1484,7 +1334,6 @@ ul {
 .collection-bottom-cta h3 {
     margin: 0;
     color: var(--text-color);
-
     font-family: var(--font-heading);
     font-size: 23px;
     font-weight: 500;
@@ -1495,19 +1344,15 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     padding: 13px 20px;
-
     background: var(--text-color);
     border: 1px solid var(--text-color);
     color: #fff;
-
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.7px;
     text-transform: uppercase;
     white-space: nowrap;
-
     transition:
         background 0.3s ease,
         border-color 0.3s ease,
@@ -1523,7 +1368,6 @@ ul {
 /* =====================================================
    TABLET
    ===================================================== */
-
 @media (max-width: 1024px) {
     .fashion-collections {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1684,11 +1528,9 @@ ul {
 }
 
 /* art section */
-
 /* =========================================================
    VATSALAY FASHION — ART OF HANDWORK
    ========================================================= */
-
 .craft-story-section {
     position: relative;
     padding: 110px 0 105px;
@@ -1705,7 +1547,6 @@ ul {
 /* ---------------------------------------------------------
    SECTION HEADING
    --------------------------------------------------------- */
-
 .craft-story-heading {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
@@ -1760,7 +1601,6 @@ ul {
 
 .craft-story-heading-right p {
     margin: 0;
-
     font-family: var(--font-body);
     font-size: 15px;
     line-height: 1.9;
@@ -1771,7 +1611,6 @@ ul {
 /* ---------------------------------------------------------
    MAIN ASYMMETRICAL LAYOUT
    --------------------------------------------------------- */
-
 .craft-story-layout {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
@@ -1783,7 +1622,6 @@ ul {
 /* ---------------------------------------------------------
    LARGE MAIN IMAGE
    --------------------------------------------------------- */
-
 .craft-story-main-visual {
     position: relative;
     min-height: 720px;
@@ -1796,7 +1634,6 @@ ul {
     height: 100%;
     display: block;
     object-fit: cover;
-
     transition:
         transform 0.9s cubic-bezier(.2,.7,.2,1);
 }
@@ -1808,7 +1645,6 @@ ul {
 .craft-story-main-overlay {
     position: absolute;
     inset: 0;
-
     background:
         linear-gradient(
             to top,
@@ -1826,11 +1662,9 @@ ul {
     left: 38px;
     right: 38px;
     bottom: 34px;
-
     display: flex;
     align-items: center;
     gap: 18px;
-
     color: #fff;
 }
 
@@ -1865,7 +1699,6 @@ ul {
 /* ---------------------------------------------------------
    RIGHT COLUMN
    --------------------------------------------------------- */
-
 .craft-story-side {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -1876,11 +1709,9 @@ ul {
 /* ---------------------------------------------------------
    DETAIL CARD
    --------------------------------------------------------- */
-
 .craft-story-detail-card {
     display: grid;
     grid-template-columns: 1.1fr  0.6fr;
-
     background: #fff;
     overflow: hidden;
 }
@@ -1916,7 +1747,6 @@ ul {
 .craft-story-card-label {
     display: block;
     margin-bottom: 16px;
-
     font-family: var(--font-body);
     font-size: 10px;
     font-weight: 700;
@@ -1926,7 +1756,6 @@ ul {
 
 .craft-story-detail-content h3 {
     margin: 0 0 17px;
-
     font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 400;
@@ -1936,47 +1765,37 @@ ul {
 
 .craft-story-detail-content p {
     margin: 0;
-
     font-family: var(--font-body);
     font-size: 12.5px;
     line-height: 1.8;
     color: #756963;
 }
 
-
 /* ---------------------------------------------------------
    DARK MESSAGE CARD
    --------------------------------------------------------- */
-
 .craft-story-message-card {
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding: 34px 40px 38px;
-
     /* background: var(--text-color); */
     background-image: url('../assets/images/products/kurta/kurtadress.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-
     overflow: hidden;
 }
 
 .craft-story-message-card::before {
     content: "";
     position: absolute;
-
     width: 220px;
     height: 220px;
-
     right: -100px;
     bottom: -120px;
-
     border: 1px solid rgba(255,255,255,0.13);
     border-radius: 50%;
 }
@@ -1984,24 +1803,18 @@ ul {
 .craft-story-message-card::after {
     content: "";
     position: absolute;
-
     width: 150px;
     height: 150px;
-
     right: -65px;
     bottom: -85px;
-
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 50%;
 }
 
-
 /* Message Card Top */
-
 .craft-story-message-top {
     position: relative;
     z-index: 2;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2017,21 +1830,17 @@ ul {
 .craft-story-message-icon {
     width: 42px;
     height: 42px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: 1px solid rgba(255,255,255,0.22);
     border-radius: 50%;
-
     font-size: 15px;
     color: #d7b777;
 }
 
 
 /* Message Content */
-
 .craft-story-message-content {
     position: relative;
     z-index: 2;
@@ -2044,7 +1853,6 @@ ul {
 
 .craft-story-message-content h3 {
     margin: 0 0 17px;
-
     font-family: var(--font-heading);
     font-size: 38px;
     font-weight: 400;
@@ -2059,7 +1867,6 @@ ul {
 .craft-story-message-content p {
     max-width: 390px;
     margin: 0 0 25px;
-
     font-family: var(--font-body);
     font-size: 12.5px;
     line-height: 1.8;
@@ -2068,30 +1875,24 @@ ul {
 
 
 /* CTA */
-
 .craft-story-link {
     display: inline-flex;
     align-items: center;
     gap: 14px;
-
     width: fit-content;
-
     font-family: var(--font-body);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-
     color: #fff;
     text-decoration: none;
-
     transition: gap 0.3s ease;
 }
 
 .craft-story-link i {
     font-size: 11px;
     color: #d7b777;
-
     transition: transform 0.3s ease;
 }
 
@@ -2107,12 +1908,10 @@ ul {
 /* ---------------------------------------------------------
    BOTTOM STATEMENT
    --------------------------------------------------------- */
-
 .craft-story-bottom {
     display: flex;
     align-items: center;
     gap: 25px;
-
     margin-top: 55px;
 }
 
@@ -2124,13 +1923,10 @@ ul {
 
 .craft-story-bottom p {
     margin: 0;
-
     display: flex;
     align-items: center;
     gap: 13px;
-
     white-space: nowrap;
-
     font-family: var(--font-body);
     font-size: 9px;
     font-weight: 700;
@@ -2142,11 +1938,9 @@ ul {
     color: var(--accent-red);
 }
 
-
 /* ---------------------------------------------------------
    SUBTLE ANIMATION
    --------------------------------------------------------- */
-
 .craft-story-main-visual,
 .craft-story-detail-card,
 .craft-story-message-card {
@@ -2171,4 +1965,358 @@ ul {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* =========================================================
+VATSALAY FASHION — HANDWORK MODEL FASHION SLIDER
+========================================================= */
+
+.handwork-model-slider {
+position: relative;
+width: 100%;
+background: #d8d8d6;
+overflow: hidden;
+padding: 80px 0 70px;
+}
+
+/* =========================================================
+SLIDER CONTENT
+========================================================= */
+
+.handwork-model-content {
+position: relative;
+width: 100%;
+max-width: 1450px;
+height: 500px;
+margin: 0 auto;
+}
+
+/* =========================================================
+SLIDER STAGE
+========================================================= */
+
+.model-slider-stage {
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+/* =========================================================
+INDIVIDUAL SLIDE
+========================================================= */
+
+.model-slide {
+position: absolute;
+inset: 0;
+
+
+display: flex;
+align-items: flex-end;
+justify-content: center;
+
+opacity: 0;
+visibility: hidden;
+
+transform: translateX(100%);
+
+transition:
+    transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 0.55s ease,
+    visibility 0.8s ease;
+
+
+}
+
+/* =========================================================
+ACTIVE SLIDE
+========================================================= */
+
+.model-slide.active {
+opacity: 1;
+visibility: visible;
+transform: translateX(0);
+z-index: 2;
+}
+
+/* =========================================================
+ENTER FROM RIGHT
+========================================================= */
+
+.model-slide.enter-right {
+opacity: 1;
+visibility: visible;
+transform: translateX(100%);
+z-index: 3;
+}
+
+/* =========================================================
+ENTER FROM LEFT
+========================================================= */
+
+.model-slide.enter-left {
+opacity: 1;
+visibility: visible;
+transform: translateX(-100%);
+z-index: 3;
+}
+
+/* =========================================================
+EXIT TO LEFT
+========================================================= */
+
+.model-slide.exit-left {
+opacity: 0;
+visibility: visible;
+transform: translateX(-100%);
+z-index: 1;
+}
+
+/* =========================================================
+EXIT TO RIGHT
+========================================================= */
+
+.model-slide.exit-right {
+opacity: 0;
+visibility: visible;
+transform: translateX(100%);
+z-index: 1;
+}
+
+/* =========================================================
+MODEL IMAGE
+========================================================= */
+
+.model-slide img {
+position: relative;
+
+
+height: 100%;
+width: auto;
+
+max-width: 70%;
+
+object-fit: contain;
+object-position: center bottom;
+
+display: block;
+
+z-index: 2;
+
+
+}
+
+/* =========================================================
+CAPTION
+========================================================= */
+
+.model-slide-caption {
+position: absolute;
+
+
+left: 8%;
+bottom: 90px;
+
+z-index: 5;
+
+max-width: 260px;
+
+
+}
+
+.model-slide-caption span {
+display: block;
+
+
+margin-bottom: 10px;
+
+font-family: var(--font-body);
+font-size: 11px;
+font-weight: 600;
+
+letter-spacing: 2px;
+
+color: #625e5a;
+
+
+}
+
+.model-slide-caption h2 {
+margin: 0;
+
+
+font-family: var(--font-heading);
+font-size: clamp(30px, 4vw, 52px);
+
+line-height: 1.05;
+font-weight: 500;
+
+color: #2c221e;
+
+
+}
+
+/* =========================================================
+ARROWS
+========================================================= */
+
+.model-slider-arrow {
+position: absolute;
+
+
+top: 50%;
+
+transform: translateY(-50%);
+
+width: 56px;
+height: 56px;
+
+border: 1px solid rgba(44, 34, 30, 0.35);
+border-radius: 50%;
+
+background: rgba(255, 255, 255, 0.35);
+
+color: #2c221e;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+cursor: pointer;
+
+z-index: 20;
+
+transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+.model-slider-prev {
+left: 35px;
+}
+
+.model-slider-next {
+right: 35px;
+}
+
+.model-slider-arrow:hover {
+background: #2c221e;
+border-color: #2c221e;
+color: #fff;
+
+transform: translateY(-50%) scale(1.08);
+
+
+}
+
+.model-slider-arrow:disabled {
+opacity: 0.3;
+pointer-events: none;
+}
+
+/* =========================================================
+TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+.handwork-model-slider {
+    padding: 50px 0 45px;
+}
+
+.handwork-model-content {
+    height: 570px;
+}
+
+.model-slide img {
+    max-width: 82%;
+}
+
+.model-slide-caption {
+    left: 7%;
+    bottom: 45px;
+}
+
+.model-slide-caption h2 {
+    font-size: 34px;
+}
+
+.model-slider-arrow {
+    width: 48px;
+    height: 48px;
+}
+
+.model-slider-prev {
+    left: 18px;
+}
+
+.model-slider-next {
+    right: 18px;
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+.handwork-model-content {
+    height: 520px;
+}
+
+.model-slide {
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.model-slide img {
+    height: 90%;
+    max-width: 88%;
+}
+
+.model-slide-caption {
+    left: 25px;
+    bottom: 25px;
+}
+
+.model-slide-caption span {
+    font-size: 9px;
+}
+
+.model-slide-caption h2 {
+    font-size: 28px;
+}
+
+.model-slider-arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 12px;
+}
+
+.model-slider-prev {
+    left: 10px;
+}
+
+.model-slider-next {
+    right: 10px;
+}
+
+
+}
+
+/* =========================================================
+REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+
+.model-slide {
+    transition: none;
+}
+
+
 }
