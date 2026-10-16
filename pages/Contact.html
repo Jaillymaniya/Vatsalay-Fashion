@@ -24,6 +24,163 @@
     <div class="header-space"></div>
 
 
+<!-- Custom Contact Section -->
+<section class="vf-contact" id="contact">
+    <div class="vf-contact-container">
+
+        <!-- Section Heading -->
+        <div class="vf-contact-heading">
+            <span class="vf-contact-eyebrow">LET'S CONNECT</span>
+            <h1>Every Detail Begins <em>With a Story.</em></h1>
+            <p>
+                Have a question about our handcrafted creations or want
+                something made especially for you? We'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="vf-contact-grid">
+
+            <!-- Left: Contact Information -->
+            <div class="vf-contact-info">
+                <span class="vf-contact-label">GET IN TOUCH</span>
+                <h2>Let's create something beautiful together.</h2>
+                <p class="vf-contact-description">
+                    From intricate Khatli work to thoughtfully handcrafted
+                    designs, our team is here to help with your inquiries.
+                </p>
+
+                <div class="vf-contact-detail">
+                    <span class="vf-contact-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </span>
+                    <div>
+                        <h3>Email Us</h3>
+                        <a href="mailto:YOUR_EMAIL@example.com">
+                            YOUR_EMAIL@example.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vf-contact-detail">
+                    <span class="vf-contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <div>
+                        <h3>Call Us</h3>
+                        <a href="tel:+918490976451">
+                            +91 8490976451
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vf-contact-detail">
+                    <span class="vf-contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <div>
+                        <h3>Visit Us</h3>
+                        <p>Surat, Gujarat, India</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="vf-contact-form-wrap">
+                <div class="vf-form-heading">
+                    <span class="vf-contact-label">SEND AN INQUIRY</span>
+                    <h2>We'd love to hear from you.</h2>
+                    <p>Tell us a little about what you're looking for.</p>
+                </div>
+
+                <form id="vfContactForm" class="vf-contact-form">
+
+                    <div class="vf-form-row">
+                        <div class="vf-form-group">
+                            <label for="vfName">Your Name *</label>
+                            <input type="text" id="vfName" name="name"
+                                   placeholder="Enter your full name"
+                                   autocomplete="name" required>
+                        </div>
+
+                        <div class="vf-form-group">
+                            <label for="vfEmail">Email Address *</label>
+                            <input type="email" id="vfEmail" name="email"
+                                   placeholder="you@example.com"
+                                   autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="vf-form-row">
+                        <div class="vf-form-group">
+                            <label for="vfPhone">Phone Number</label>
+                            <input type="tel" id="vfPhone" name="phone"
+                                   placeholder="+91 XXXXX XXXXX"
+                                   autocomplete="tel">
+                        </div>
+
+                        <div class="vf-form-group">
+                            <label for="vfSubject">Inquiry Type *</label>
+                            <select id="vfSubject" name="subject" required>
+                                <option value="" disabled selected>
+                                    Select an inquiry
+                                </option>
+                                <option value="Handcrafted Products">
+                                    Handcrafted Products
+                                </option>
+                                <option value="Custom Design">
+                                    Custom Design
+                                </option>
+                                <option value="Khatli Work">
+                                    Khatli Work
+                                </option>
+                                <option value="Bulk or Business Inquiry">
+                                    Bulk or Business Inquiry
+                                </option>
+                                <option value="Other">
+                                    Other
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="vf-form-group">
+                        <label for="vfMessage">Your Message *</label>
+                        <textarea id="vfMessage" name="message"
+                                  rows="5"
+                                  placeholder="Tell us about your requirements..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="vf-contact-submit">
+                        <span>Send Inquiry via WhatsApp</span>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+
+                    <p class="vf-form-note">
+                        Your inquiry will open in WhatsApp for you to review
+                        and send.
+                    </p>
+
+                    <p id="vfFormStatus" class="vf-form-status"
+                       role="status" aria-live="polite"></p>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Closing Brand Statement -->
+        <div class="vf-contact-bottom">
+            <span>MADE WITH PATIENCE. CRAFTED WITH LOVE.</span>
+        </div>
+
+    </div>
+</section>
+<!-- End Custom Contact Section -->
+
+
+<div class="header-space"></div>
 
     <!-- Footer -->
     <div id="site-footer"></div>
@@ -37,6 +194,7 @@
     <script src="../js/handwork-slider.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/collections.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 
 </html>

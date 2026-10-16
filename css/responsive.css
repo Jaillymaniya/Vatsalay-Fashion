@@ -531,3 +531,87 @@
     }
 
 }
+
+/* =========================================
+   VATSALAY BRAND WAVE
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .vatsalay-brand-wave {
+        padding: 45px 0 35px;
+    }
+
+    .brand-wave-row {
+        width: 125%;
+        left: -12.5%;
+        height: 125px;
+    }
+
+    .brand-wave-text {
+        font-size: 68px;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .vatsalay-brand-wave {
+        padding: 35px 0 25px;
+    }
+
+    .brand-wave-row {
+        width: 150%;
+        left: -25%;
+        height: 100px;
+    }
+
+    .brand-wave-text {
+        font-size: 52px;
+        letter-spacing: 1.5px;
+    }
+
+    .brand-wave-row-1 {
+        transform: translateY(8px);
+    }
+
+    .brand-wave-row-2 {
+        transform: translateY(-2px);
+    }
+
+    .brand-wave-row-3 {
+        transform: translateY(7px);
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .vatsalay-brand-wave {
+        padding: 28px 0 20px;
+    }
+
+    .brand-wave-row {
+        width: 175%;
+        left: -37.5%;
+        height: 82px;
+    }
+
+    .brand-wave-text {
+        font-size: 42px;
+        letter-spacing: 1px;
+    }
+
+}
